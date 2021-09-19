@@ -1,4 +1,5 @@
 import "./App.css";
+import SearchBar from "./SearchBar";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
           Soon you will be able to track your favorite books, adding comments,
           rewiews and rate!
         </p>
+        <SearchBar />
       </header>
     </div>
   );
