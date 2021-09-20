@@ -6,7 +6,7 @@ export default function SearchBar() {
   const [keyword, setKeyword] = useState("");
   const [result, setResult] = useState([]);
   let api_key = "AIzaSyDx3MkIdfeq-zrEHnCWovg-uVk_Hhqr5O4";
-  let url = `https://www.googleapis.com/books/v1/volumes?q=harry+potter&key=${api_key}`;
+  let url = `https://www.googleapis.com/books/v1/volumes?q=${keyword}&key=${api_key}`;
 
   function search(event) {
     event.preventDefault();
@@ -14,12 +14,13 @@ export default function SearchBar() {
   }
 
   function urlResponse(response) {
+    console.log(response.data.items);
     response.data.items.map(function (item, index) {
       return setResult((prevResult) => {
         return [
           ...prevResult,
           {
-            id: item.volumeInfo.id,
+            id: item.id,
             author: item.volumeInfo.authors,
             title: item.volumeInfo.title,
             // image: item.volumeInfo.imageLinks.smallThumbnail,
@@ -30,7 +31,7 @@ export default function SearchBar() {
   }
 
   return (
-    <div className="searchBar">
+    <div className="search-bar">
       <form onSubmit={search}>
         <input
           type="search"

@@ -1,14 +1,29 @@
 .App {
   text-align: center;
+  background-color: #4d1136;
 }
 
 .App-header {
-  background-color: #4d1136;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.search-bar {
+  min-height: 50vh;
+}
+.card-body {
+  color: black;
+  font-size: 13px;
+}
+.card {
+  width: 300px;
+  display: inline-block;
+}
+
+.search-result {
+  margin: 20px 0;
 }
