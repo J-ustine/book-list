@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import SearchResult from "./SearchResult";
 
@@ -25,4 +26,10 @@ export default function Suggestions() {
       <SearchResult result={suggestion} />
     </div>
   );
+=======
+import React from "react";
+
+export default function Suggestions() {
+  return "Suggestions";
+>>>>>>> 4b37e6d9... Add React router and routes to the app
 }
