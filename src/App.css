@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #4d1136;
-  min-height: 32vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,8 @@
   background-color: #4d1136;
   color: white;
   min-height: 32vh;
+}
+
+.nav-item {
+  margin-right: 10px;
 }

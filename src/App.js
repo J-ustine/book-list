@@ -10,7 +10,9 @@ export default function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <Link to="/">Booklist</Link>
+            <Link to="/" className="navbar-brand">
+              Booklist
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
