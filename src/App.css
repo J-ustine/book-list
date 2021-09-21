@@ -31,3 +31,9 @@
 .nav-item {
   margin-right: 10px;
 }
+
+.current {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
