@@ -27,3 +27,20 @@
   color: black;
   font-weight: 600;
 }
+
+.search-bar {
+  min-height: 50vh;
+}
+
+.card-body {
+  color: black;
+  font-size: 13px;
+}
+.card {
+  width: 300px;
+  display: inline-block;
+}
+
+.search-result {
+  margin: 20px 0;
+}
