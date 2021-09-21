@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
 import SearchResult from "./SearchResult";
@@ -39,5 +40,18 @@ export default function Home() {
       <SearchBar search={search} keyword={setKeyword} />
       <SearchResult result={result} />
     </div>
+=======
+import React from "react";
+
+export default function Home() {
+  return (
+    <header className="App-header">
+      <h3>Welcome to your book list app!</h3>
+      <p>
+        Soon you will be able to track your favorite books, adding comments,
+        rewiews and rate!
+      </p>
+    </header>
+>>>>>>> 4b37e6d9... Add React router and routes to the app
   );
 }
