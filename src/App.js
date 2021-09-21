@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+  Link,
+} from "react-router-dom";
 import MyList from "./MyList";
 import Suggestions from "./Suggestions";
 import Home from "./Home";
@@ -27,13 +33,19 @@ export default function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/">Home</Link>
+                  <NavLink to="/" activeClassName="current" exact>
+                    Home
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/my-list">My List</Link>
+                  <NavLink to="/my-list" activeClassName="current">
+                    My List
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link to="/suggestions">Suggestions</Link>
+                  <NavLink to="/suggestions" activeClassName="current">
+                    Suggestions
+                  </NavLink>
                 </li>
               </ul>
             </div>
