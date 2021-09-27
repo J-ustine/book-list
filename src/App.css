@@ -58,3 +58,12 @@ body {
 .search-result {
   margin: 20px 0;
 }
+
+.list-book {
+  width: 90%;
+  height: 120px;
+}
+
+.card-header.card-title {
+  color: black;
+}
