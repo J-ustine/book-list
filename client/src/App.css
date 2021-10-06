@@ -4,12 +4,7 @@ body {
 }
 
 .App-header {
-<<<<<<< HEAD
   margin: 30px;
-=======
-  background-color: #4d1136;
-  min-height: 94vh;
->>>>>>> 42355642... Add soon message in each route
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +32,6 @@ body {
 .nav-item {
   margin-right: 10px;
 }
-<<<<<<< HEAD
 
 .current {
   text-decoration: none;
@@ -73,5 +67,3 @@ body {
 .card-header.card-title {
   color: black;
 }
-=======
->>>>>>> 42355642... Add soon message in each route
