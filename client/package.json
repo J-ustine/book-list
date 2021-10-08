@@ -8,12 +8,16 @@
     "@testing-library/user-event": "^12.8.3",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "axios": "^0.21.4",
 =======
 >>>>>>> my-list
 =======
     "axios": "^0.21.4",
 >>>>>>> my-list
+=======
+    "axios": "^0.21.4",
+>>>>>>> suggestions
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0",
