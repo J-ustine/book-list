@@ -44,4 +44,19 @@ export default function MyList() {
     </header>
 >>>>>>> my-list
   );
+=======
+import React from "react";
+
+export default function MyList() {
+<<<<<<< HEAD
+  return "hello";
+>>>>>>> 4b37e6d9... Add React router and routes to the app
+=======
+  return (
+    <header className="App-header">
+      <h3>Welcome to your list of favorite book!</h3>
+      <p>Soon you will have your favorite list saved here.</p>
+    </header>
+  );
+>>>>>>> 42355642... Add soon message in each route
 }
