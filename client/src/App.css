@@ -12,9 +12,6 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.search-bar {
-  min-height: 50vh;
-}
 .card-body {
   color: black;
   font-size: 13px;
@@ -37,10 +34,6 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-}
-
-.search-bar {
-  min-height: 50vh;
 }
 
 .card-body {
