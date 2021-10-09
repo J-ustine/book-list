@@ -39,25 +39,15 @@ body {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 .search-bar {
   min-height: 50vh;
 }
 
->>>>>>> 0511bbd0... Resolve rebase conflict about css
->>>>>>> suggestions
 .card-body {
   color: black;
   font-size: 13px;
 }
 .card {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> suggestions
   width: 220px;
   height: 420px;
   display: inline-block;
@@ -81,15 +71,3 @@ body {
 .card-header.card-title {
   color: black;
 }
-<<<<<<< HEAD
-=======
-=======
-  width: 300px;
-  display: inline-block;
-}
-
-.search-result {
-  margin: 20px 0;
-}
->>>>>>> 0511bbd0... Resolve rebase conflict about css
->>>>>>> suggestions
