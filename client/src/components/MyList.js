@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ListBook from "./ListBook";
-import axios from "./axios";
+import axios from "axios";
 
 export default function MyList() {
   const [myList, setMyList] = useState([]);

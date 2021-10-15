@@ -1,4 +1,4 @@
-import "./App.css";
+import "./style/App.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,9 +6,9 @@ import {
   NavLink,
   Link,
 } from "react-router-dom";
-import MyList from "./MyList";
-import Suggestions from "./Suggestions";
-import Home from "./Home";
+import MyList from "./components/MyList";
+import Suggestions from "./components/Suggestions";
+import Home from "./components/Home";
 
 export default function App() {
   return (
@@ -53,15 +53,9 @@ export default function App() {
         </nav>
         <div className="content">
           <Switch>
-            <Route exact path="/my-list">
-              <MyList />
-            </Route>
-            <Route exact path="/suggestions">
-              <Suggestions />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/my-list" component={MyList} />
+            <Route exact path="/suggestions" component={Suggestions} />
           </Switch>
         </div>
       </div>
