@@ -16,7 +16,7 @@ export default function MyList() {
   return (
     <div className="my-list">
       <header className="App-header">
-        <h3>Welcome to your list of favorite book!</h3>
+        <h3>My reading list, comments and ratings</h3>
       </header>
       <ListBook result={myList} />
     </div>

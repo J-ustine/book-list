@@ -8,7 +8,7 @@ export default function SearchBar(props) {
           type="search"
           name="search"
           id="search"
-          placeholder="book, author, themes, etc"
+          placeholder="Enter a keyword"
           onChange={(event) => props.keyword(event.target.value)}
         />
         <input type="submit" value="Search" />

@@ -14,8 +14,9 @@ export default function Suggestions() {
   }, []);
 
   return (
-    <header className="App-header">
+    <div className="suggestions">
+      <header className="App-header">Suggestions for your next readings</header>
       <SearchResult result={suggestions} />
-    </header>
+    </div>
   );
 }

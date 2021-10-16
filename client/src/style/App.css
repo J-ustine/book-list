@@ -12,6 +12,11 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.welcome-txt {
+  margin: 10px;
+  font-style: italic;
+}
+
 .card-body {
   color: black;
   font-size: 13px;
