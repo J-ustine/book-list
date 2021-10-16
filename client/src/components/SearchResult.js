@@ -14,7 +14,7 @@ export default function SearchResult(props) {
     setBook({
       author: event.target.name,
       title: event.target.title,
-      comments: prompt("Please let a review for this book"),
+      comments: prompt("Please let a comment for this book. Did you like it?"),
       rating: prompt("Please rate this book from 1(disapointed) to 5(love it)"),
     });
   }

@@ -34,7 +34,13 @@ export default function Home() {
   return (
     <div className="home">
       <header className="App-header">
-        <h3>Welcome to your book list app!</h3>
+        <h3>Welcome to the Book List app!</h3>
+        <h6 className="welcome-txt">
+          I invite you to search for a book by keyword, to consult my
+          suggestions for your next reading or my favorite reading list.
+          <br />
+          Good reading!
+        </h6>
       </header>
       <SearchBar search={search} keyword={setKeyword} />
       <SearchResult result={result} />
