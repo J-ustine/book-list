@@ -12,6 +12,7 @@ I also offer you some personal suggestions.
 # Requirements
 
 - React : develop the application in javascript using the React framework.
+- API : process requests and work with the response to display require information.
 - Database : store, organize, consult my personal suggestions and the favorites kept in favorites by the users (with rating and comments).
 <br>
 Currently, the server is accessible from 'http://localhost:3000'.
