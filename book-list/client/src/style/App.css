@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  background-color: #4d1136;
+}
+
+.App-header {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.welcome-txt {
+  margin: 10px;
+  font-style: italic;
+}
+
+.card-body {
+  color: black;
+  font-size: 13px;
+}
+.card {
+  width: 300px;
+  display: inline-block;
+}
+
+.content {
+  color: white;
+  min-height: 32vh;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.current {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.card-body {
+  color: black;
+  font-size: 13px;
+}
+.card {
+  width: 220px;
+  height: 420px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 300px;
+  margin-top: 5px;
+}
+.search-result {
+  margin: 20px 0;
+}
+
+.list-book {
+  width: 90%;
+  height: 120px;
+}
+
+.card-header.card-title {
+  color: black;
+}
