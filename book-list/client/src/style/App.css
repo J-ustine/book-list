@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #4d1136;
+  background-color: #4d113649;
 }
 
 .App-header {
@@ -10,20 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-.welcome-txt {
-  margin: 10px;
-  font-style: italic;
-}
-
-.card-body {
   color: black;
-  font-size: 13px;
-}
-.card {
-  width: 300px;
-  display: inline-block;
 }
 
 .content {
@@ -41,10 +28,11 @@ body {
   font-weight: 600;
 }
 
-.card-body {
-  color: black;
-  font-size: 13px;
+.welcome-txt {
+  margin: 10px;
+  font-style: italic;
 }
+
 .card {
   width: 220px;
   height: 420px;
@@ -57,6 +45,23 @@ body {
   height: 300px;
   margin-top: 5px;
 }
+
+.card-title {
+  color: black;
+  font-size: 13px;
+}
+
+.card-body {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-outline-dark {
+  width: 100%;
+  margin-top: auto;
+}
+
 .search-result {
   margin: 20px 0;
 }
@@ -66,6 +71,6 @@ body {
   height: 120px;
 }
 
-.card-header.card-title {
-  color: black;
+.btn-outline-danger {
+  display: inline-block;
 }

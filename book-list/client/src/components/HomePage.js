@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import SearchBar from "./SearchBar";
-import SearchResult from "./SearchResult";
+import Result from "./Result";
+import book from "../style/book.png";
 import axios from "axios";
 
 export default function Home() {
   const [keyword, setKeyword] = useState("");
   const [result, setResult] = useState([]);
   let api_key = "AIzaSyDx3MkIdfeq-zrEHnCWovg-uVk_Hhqr5O4";
-  let url = `https://www.googleapis.com/books/v1/volumes?q=${keyword}&key=${api_key}`;
+  let url = `https://www.googleapis.com/books/v1/volumes?q=${keyword}&key=${api_key}&maxResults=18&printType=books&orderBy=relevance`;
 
   function search(event) {
     event.preventDefault();
@@ -24,7 +25,10 @@ export default function Home() {
             id: item.id,
             author: item.volumeInfo.authors,
             title: item.volumeInfo.title,
-            image: item.volumeInfo.imageLinks.smallThumbnail,
+            image:
+              item.volumeInfo.imageLinks === undefined
+                ? book
+                : `${item.volumeInfo.imageLinks.thumbnail}`,
           },
         ];
       });
@@ -43,7 +47,7 @@ export default function Home() {
         </h6>
       </header>
       <SearchBar search={search} keyword={setKeyword} />
-      <SearchResult result={result} />
+      <Result result={result} />
     </div>
   );
 }

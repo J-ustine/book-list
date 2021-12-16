@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function SearchResult(props) {
+export default function AddButton(props) {
   const [book, setBook] = useState({
     author: null,
     title: null,
@@ -8,8 +8,7 @@ export default function SearchResult(props) {
     rating: null,
   });
 
-  async function test2(event) {
-    console.log(event.target.name);
+  async function AddRequest(event) {
     event.preventDefault();
     setBook({
       author: event.target.name,
@@ -44,31 +43,15 @@ export default function SearchResult(props) {
   }, [book]);
 
   return (
-    <div className="row search-result">
-      {props.result.map(function (result, index) {
-        return (
-          <div className="col-3" key={index}>
-            <div className="card">
-              <img src={result.image} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <p className="card-title">
-                  <em>{result.title}</em> <small>{result.author}</small>
-                </p>
-                <form action="/add" method="post" className="book">
-                  <button
-                    className="btn btn-success"
-                    onClick={test2}
-                    name={result.author}
-                    title={result.title}
-                  >
-                    Add to my list
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+    <form action="/add" method="post" className="book">
+      <button
+        className="btn btn-outline-dark btn-sm"
+        onClick={AddRequest}
+        name={props.author}
+        title={props.title}
+      >
+        Add to my list
+      </button>
+    </form>
   );
 }

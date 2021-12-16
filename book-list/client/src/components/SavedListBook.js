@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteButton from "./DeleteButton";
 
 export default function Listbook(props) {
   const rating = {
@@ -16,8 +17,10 @@ export default function Listbook(props) {
           {result.title} - {result.author}
         </h5>
         <div className="card-body">
-          <p className="card-text">{rating[resultRating]}</p>
-          <p className="card-text">{result.comments}</p>
+          <p className="card-text">
+            {rating[resultRating]} | {result.comments}
+          </p>
+          <DeleteButton title={result.title} author={result.author} />
         </div>
       </div>
     );

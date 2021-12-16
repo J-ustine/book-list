@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import SearchResult from "./SearchResult";
+import Result from "./Result";
 
 export default function Suggestions() {
   const [suggestions, setSuggestions] = useState([]);
@@ -16,7 +16,7 @@ export default function Suggestions() {
   return (
     <div className="suggestions">
       <header className="App-header">Suggestions for your next readings</header>
-      <SearchResult result={suggestions} />
+      <Result result={suggestions} />
     </div>
   );
 }
